@@ -1,36 +1,36 @@
-public class LineComparison {
+public class LineComputation
+{
+    static boolean equals(double length1,double length2)
+    {
+        if(length1 == length2)
+        {
+            return true;
+        }
+            return false;
+    }
 
-    public static void main(String[] args) {
-        System.out.println("Welcome To Line Comparison Computation Program!");
-
-        int x1=4, x2=2, y1=3,y2=6 ;
+    public static void main(String[] args)
+    {
+        System.out.println("Welcome to the Comparison Computation Program") ;
+        int x1=4, x2=2,y1=3, y2=6 ;
 
         int xaxis=(x2-x1)*(x2-x1);
         int yaxis=(y2-y1)*(y2-y1);
-        double length1 = Math.sqrt((xaxis) + (yaxis));
-        System.out.println("Length of Line1 is: "+length1);
-
-        System.out.println("calculating the length of second line");
-
+        double LengthOfLine = Math.sqrt((xaxis) + (yaxis));
+        System.out.println("Length of Line1 is:"+length1) ;
+        System.out.println("calculating the length of second line") ;
         int x3=4, x4=2, y3=5, y4=3 ;
 
-        int xaxis1=(x4-x3)*(x4-x3);
-        int yaxis1=(y4-y3)*(y4-y3);
-        double length2 = Math.sqrt((xaxis1) + (yaxis1));
-        System.out.println("Length of Line2 is: "+length2);
+        int xaxis1=(x4-x3)*(x4-x3) ;
+        int yaxis1=(y4-y3)*(y4-y3) ;
+        double LengthOfSecondLine = Math.sqrt((xaxis1) + (yaxis1)) ;
+        System.out.println("Length of second Line is:"+length2) ;
 
-        Double line1 = Double.valueOf(length1);
-        Double line2 = Double.valueOf(length2);
-        int comparison = line1.compareTo(line2);
-        if (comparison== 0)
-        {
-            System.out.println("both line are eqaul");
-        }
-        else if (comparison > 0) {
-            System.out.println("line1 is greater than line2");
-        }
+        boolean Equality = equals(length1,length2) ;
+        if(Equality)
+            System.out.println("both lines are equal") ;
         else
-            System.out.println("line1 is less than line2");
-
-    }
-}
+        {
+            System.out.println("both lines are not equal") ;
+        }
+    }}
