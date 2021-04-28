@@ -7,8 +7,8 @@ public class LineComparison {
 
         int xaxis=(x2-x1)*(x2-x1);
         int yaxis=(y2-y1)*(y2-y1);
-        double len1 = Math.sqrt((xaxis) + (yaxis));
-        System.out.println("Length of Line1 is: "+len1);
+        double length1 = Math.sqrt((xaxis) + (yaxis));
+        System.out.println("Length of Line1 is: "+length1);
 
         System.out.println("calculating the length of second line");
 
@@ -16,11 +16,11 @@ public class LineComparison {
 
         int xaxis1=(x4-x3)*(x4-x3);
         int yaxis1=(y4-y3)*(y4-y3);
-        double len2 = Math.sqrt((xaxis1) + (yaxis1));
-        System.out.println("Length of Line2 is: "+len2);
+        double length2 = Math.sqrt((xaxis1) + (yaxis1));
+        System.out.println("Length of Line2 is: "+length2);
 
-        Double line1 = Double.valueOf(len1);
-        Double line2 = Double.valueOf(len2);
+        Double line1 = Double.valueOf(length1);
+        Double line2 = Double.valueOf(length2);
         int comparison = line1.compareTo(line2);
         if (comparison== 0)
         {
